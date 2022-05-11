@@ -1,0 +1,246 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Playball', cursive;
+} 
+
+/* Navigation Menu */
+
+/* Uncomment it if u want back ground in navbar */
+/* #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+} */
+
+body{
+    background-color: black;
+}
+.logo img{
+    height: 40px;
+    width: 40px;
+    margin: 2px 11px;
+    border-radius: 22px;
+
+}
+#navbar{
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#navbar ul{
+    display: flex;
+    margin: 4px;
+    flex-wrap: wrap;
+}
+#navbar ul li{
+    display: block;
+    padding: 0px 11px;
+    
+    
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px 16px;
+}
+
+#navbar ul li a:hover{
+    background-color: rgb(26, 98, 107);
+}
+@media (max-width:460px){
+    .logo{
+        margin: 0px auto;
+    }
+    #navbar ul li{
+        margin: 2px;
+        
+        
+    }
+}
+
+/* Home Section */
+
+section::before{
+    content: "";
+    background: url('bg.jpeg') repeat-y center center/cover;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home{
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home h1{
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+#home p{
+    color: yellow;
+    padding: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* ITEMS */
+
+#box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 1.3rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.item{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    box-shadow: 5px 6px 3px white;
+    margin: 20px;
+
+}
+
+.item img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid blue;
+    transition-property: height;
+    transition-duration: 0.5s;
+}
+
+.item a{
+    text-align: center;
+    background-color: black;
+    border: 2px solid blue;
+    z-index: 1;
+    text-decoration: none;
+    color: white;
+}
+.item a:hover{
+    color: red;
+}
+.item img:hover{
+    height: 250px;
+    margin: 0px;
+    flex-wrap: wrap-reverse;
+}
+@media(max-width:545px){
+    #box{
+        flex-direction: column;
+    }
+}
+
+
+/* Genre Page */
+
+.genre{
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.genre ul{
+    margin-top: 40px;
+    margin-right: 40px;
+    
+    
+    
+}
+.genre ul li a{
+    text-decoration: none;
+    color: white;
+  
+    
+}
+.genre ul li a:hover{
+    background-color: rgb(26, 98, 107);
+  
+    
+}
+
+/* Footer */
+
+footer{
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 0px;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid white;
+}
+
+
+/* Contact Page */
+
+.contact{
+    display: flex;
+    justify-content: center;
+}
+.contact form{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+}
+.contact form input{
+    font-size: 1.2rem;
+    margin-top: 6px;
+    padding: 10px;
+    
+
+}
+.contact form textarea{
+    font-size: 1.2rem;
+    margin-top: 6px;
+    
+
+}
+.contact form button{
+    font-size: 1.2rem;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    width: 70px;
+    padding: 6px;
+    margin: auto;
+    
+
+}
+
+#contactdic{
+    font-size: 1.5rem;
+    color: White;
+    text-align: center;
+    margin: 10px;
+}
